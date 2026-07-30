@@ -20,3 +20,4 @@ A modern, responsive web application that automatically fetches live movie relea
 1. **Clone the repository:**
    ```bash
    git clone (https://github.com/abhayvermacse/Movie-Recommender)
+   live preview :- https://recommendermovie.netlify.app/
