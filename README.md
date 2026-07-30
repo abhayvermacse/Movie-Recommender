@@ -16,8 +16,9 @@ A modern, responsive web application that automatically fetches live movie relea
 - **API:** [The Movie Database (TMDB) API](https://www.themoviedb.org/documentation/api)
 
 ## 🚀 How to Run locally
+ live preview :- https://recommendermovie.netlify.app/
 
 1. **Clone the repository:**
    ```bash
    git clone (https://github.com/abhayvermacse/Movie-Recommender)
-   live preview :- https://recommendermovie.netlify.app/
+  
