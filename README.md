@@ -12,7 +12,7 @@ A modern, responsive web application that automatically fetches live movie relea
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+ Fetch API)
+- **Frontend:** HTML, CSS, JavaScript
 - **API:** [The Movie Database (TMDB) API](https://www.themoviedb.org/documentation/api)
 
 ## 🚀 How to Run locally
