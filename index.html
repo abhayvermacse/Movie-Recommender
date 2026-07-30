@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RecommenderMovie | Find Similar Movies Online</title>
+
+<meta name="description" content="RecommenderMovie helps you find similar movies based on story, genre, mood, cast and ratings.">
+
+<meta name="keywords" content="RecommenderMovie, movie recommender, similar movies, movie recommendation, Bollywood, Hollywood">
+
+<meta name="author" content="Abhay Verma">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://recommendermovie.netlify.app/">
+
+<meta property="og:title" content="RecommenderMovie">
+<meta property="og:description" content="Find similar movies based on story, genre, mood and ratings.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://recommendermovie.netlify.app/">
+<meta property="og:image" content="https://recommendermovie.netlify.app/logo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://recommendermovie.netlify.app/logo.png">
+
+<link rel="icon" type="image/png" href="logo.png">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <button id="aboutBtn" onclick="openAbout()">☰ About</button>
+    <h1>🎬 Recommender Movie</h1>
+    <p>Auto-Updated Latest Movies &amp; Smart Story Matcher</p>
+</header>
+
+  <div class="controls-container">
+    <div class="search-section">
+      <input type="text" id="movieInput" placeholder="Type movie name (e.g. Ramayana, Stree 2, Kalki, Avengers)..." autocomplete="off">
+      <button onclick="handleSearch()">🔍 Search</button>
+    </div>
+  </div>
+
+  <div id="autocompleteContainer"></div>
+  <div id="selectedContainer"></div>
+  <div id="recommendationsContainer">
+    <div class="loader"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- About Modal -->
+<div id="aboutModal" class="about-modal">
+  <div class="about-box">
+    
+    
+
+    <h2>🎬 RecommenderMovie</h2>
+    <p class="subtitle">
+      Smart Movie Recommendation System
+    </p>
+
+    <h3>👨‍💻 Developer Team</h3>
+
+    <div class="member">
+      <h4>Abhay Verma</h4>
+      <p><b>Role:</b> Backend Developer & API Integration</p>
+      <a href="https://instagram.com/cyber_raj1" target="_blank">
+        📷 Instagram
+      </a>
+    </div>
+
+    <div class="member">
+      <h4>Aditya Verma</h4>
+      <p><b>Role:</b> Presentation Designer (PPT)</p>
+      <a href="https://instagram.com/adityakumar955532" target="_blank">
+        📷 Instagram
+      </a>
+    </div>
+
+    <div class="member">
+      <h4>Anish Gupta</h4>
+      <p><b>Role:</b> Frontend Developer</p>
+      <a href="https://instagram.com/er.anish_gupta" target="_blank">
+        📷 Instagram
+      </a>
+    </div>
+
+    <div class="member">
+      <h4>Ankit Kumar</h4>
+      <p><b>Role:</b> Quality Assurance & Testing</p>
+      <a href="https://instagram.com/ankith_kumars" target="_blank">
+        📷 Instagram
+      </a>
+    </div>
+
+
+
+  <div class="about-footer">
+<button class="close-about-btn" onclick="closeAbout()">✖ Close</button>
+</div>
+</div>
+</div>
+
+<script>
+function openAbout(){
+    document.getElementById("aboutModal").style.display="flex";
+}
+
+function closeAbout(){
+    document.getElementById("aboutModal").style.display="none";
+}
+window.onclick=function(e){
+ const m=document.getElementById("aboutModal");
+ if(e.target===m){closeAbout();}
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"RecommenderMovie",
+  "url":"https://recommendermovie.netlify.app/",
+  "image":"https://recommendermovie.netlify.app/logo.png"
+}
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+<script>
+  DisableDevtool({
+    ondevtoolopen: function() {
+      window.location.href = "https://google.com";
+    }
+  });
+    
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+</body>
+</html>
