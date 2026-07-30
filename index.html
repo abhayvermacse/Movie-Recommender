@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Movie Hub - Live Updates</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Live Movie Recommender</h1>
+    <p>Auto-Updated Latest Movies &amp; Smart Story Matcher</p>
+  </header>
+
+  <div class="controls-container">
+    <div class="search-section">
+      <input type="text" id="movieInput" placeholder="Type movie name (e.g. Ramayana, Stree 2, Kalki, Avengers)..." autocomplete="off">
+      <button onclick="handleSearch()">🔍 Search</button>
+    </div>
+  </div>
+
+  <div id="autocompleteContainer"></div>
+  <div id="selectedContainer"></div>
+  <div id="recommendationsContainer">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Pehle config, fir script -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
